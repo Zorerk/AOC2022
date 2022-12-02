@@ -18,7 +18,8 @@
             data = File.ReadAllLines("data.txt");
         }
 
-        public void P1(){
+        public void P1()
+        {
             int score = 0;
             foreach (string? d in data)
             {
@@ -27,29 +28,44 @@
                 switch (x[0])
                 {
                     case "A":
-                        if (x[1] == "X"){
+                        if (x[1] == "X")
+                        {
                             score += 4;
-                        } else if(x[1] == "Y"){
+                        }
+                        else if (x[1] == "Y")
+                        {
                             score += 8;
-                        } else{
+                        }
+                        else
+                        {
                             score += 3;
                         }
                         break;
                     case "B":
-                        if (x[1] == "X"){
+                        if (x[1] == "X")
+                        {
                             score += 1;
-                        } else if(x[1] == "Y"){
+                        }
+                        else if (x[1] == "Y")
+                        {
                             score += 5;
-                        } else{
+                        }
+                        else
+                        {
                             score += 9;
                         }
                         break;
                     case "C":
-                        if (x[1] == "X"){
+                        if (x[1] == "X")
+                        {
                             score += 7;
-                        } else if(x[1] == "Y"){
+                        }
+                        else if (x[1] == "Y")
+                        {
                             score += 2;
-                        } else{
+                        }
+                        else
+                        {
                             score += 6;
                         }
                         break;
@@ -58,7 +74,8 @@
             Console.WriteLine("P1 Score: {0}", score);
         }
 
-        public void P2(){
+        public void P2()
+        {
             int score = 0;
             foreach (string? d in data)
             {
@@ -67,29 +84,44 @@
                 switch (x[0])
                 {
                     case "A":
-                        if (x[1] == "X"){
+                        if (x[1] == "X")
+                        {
                             score += 3;
-                        } else if(x[1] == "Y"){
+                        }
+                        else if (x[1] == "Y")
+                        {
                             score += 4;
-                        } else{
+                        }
+                        else
+                        {
                             score += 8;
                         }
                         break;
                     case "B":
-                        if (x[1] == "X"){
+                        if (x[1] == "X")
+                        {
                             score += 1;
-                        } else if(x[1] == "Y"){
+                        }
+                        else if (x[1] == "Y")
+                        {
                             score += 5;
-                        } else{
+                        }
+                        else
+                        {
                             score += 9;
                         }
                         break;
                     case "C":
-                        if (x[1] == "X"){
+                        if (x[1] == "X")
+                        {
                             score += 2;
-                        } else if(x[1] == "Y"){
+                        }
+                        else if (x[1] == "Y")
+                        {
                             score += 6;
-                        } else{
+                        }
+                        else
+                        {
                             score += 7;
                         }
                         break;
@@ -98,6 +130,6 @@
             }
             Console.WriteLine("P2 Score: {0}", score);
         }
-        
+
     }
 }
